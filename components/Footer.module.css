@@ -1,0 +1,348 @@
+.footer {
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 80px 0 30px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1fr 1.8fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logoSection img {
+  height: 32px;
+  width: auto;
+}
+
+.tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 250px;
+}
+
+.navigationSection,
+.legalSection,
+.contactSection,
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.sectionTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #003077;
+  margin: 0;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navList a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navList a:hover {
+  color: #003077;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactAddress {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contactLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #003077;
+}
+
+.appLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appStoreLink,
+.googlePlayLink {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.appStoreLink:hover,
+.googlePlayLink:hover {
+  opacity: 0.8;
+}
+
+.appStoreButton {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  gap: 10px;
+}
+
+.appStoreIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.appStoreText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appStoreSubtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.appStoreMaintext {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: -4px;
+}
+
+.googlePlayButton {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  gap: 10px;
+}
+
+.googlePlayIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.googlePlayText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.googlePlaySubtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.googlePlayMaintext {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: -4px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(0, 48, 119, 0.05);
+  color: #003077;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: #003077;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.languageLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+}
+
+.languageButton {
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: transparent;
+  color: #666666;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.languageButton:hover {
+  border-color: #003077;
+  color: #003077;
+  background: rgba(0, 48, 119, 0.05);
+}
+
+.languageButtonActive {
+  background: #003077;
+  border-color: #003077;
+  color: #ffffff;
+}
+
+.languageButtonActive:hover {
+  background: #003f94;
+  border-color: #003f94;
+  color: #ffffff;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.copyright p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .mainContent {
+    grid-template-columns: 2fr 1.2fr 1fr 1.8fr 1.5fr;
+    gap: 40px;
+  }
+
+  .socialSection {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mainContent {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .socialSection,
+  .contactSection {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .mainContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .logoSection,
+  .navigationSection,
+  .legalSection,
+  .contactSection,
+  .appSection,
+  .socialSection {
+    width: 100%;
+  }
+
+  .socialLinks {
+    justify-content: flex-start;
+  }
+
+  .languageSwitcher {
+    justify-content: flex-start;
+  }
+}

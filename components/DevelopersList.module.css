@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.developersList {
+  min-height: calc(100vh - 400px);
+  padding: 60px 0 100px 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 40px 100px 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 400;
+  color: #003077;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #003077;
+}
+
+
+
+
+.developersGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 20px 0;
+}
+
+@media (min-width: 600px) {
+  .developersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .developersGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .developersGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.developersGrid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.developersGrid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.developersGrid::-webkit-scrollbar-thumb {
+  background: #003077;
+  border-radius: 4px;
+}
+
+.developersGrid::-webkit-scrollbar-thumb:hover {
+  background: #002055;
+}
+
+.developerCard {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 48, 119, 0.04);
+}
+
+.developerCard:hover {
+  box-shadow: 0 12px 30px rgba(0, 48, 119, 0.08);
+}
+
+.cardImageSection {
+  flex: 0 0 60%;
+  position: relative;
+  background: #f0f4f8;
+  overflow: hidden;
+}
+
+.mainCardImage {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.developerCard:hover .mainCardImage {
+  transform: scale(1.05);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #003077 0%, #0055aa 100%);
+}
+
+.placeholderText {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.overlappingLogoWrapper {
+  position: absolute;
+  top: calc(60% - 10px);
+  left: 16px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.smallLogoContainer {
+  width: 56px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.smallLogo {
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.smallLogoPlaceholder {
+  width: 56px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003077;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.cardInfoSection {
+  flex: 0 0 40%;
+  padding: 30px 16px 15px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.cardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.developerName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #003077;
+  margin: 0;
+  line-height: 1.2;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.cardProjectsCount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  gap: 4px;
+}
+
+.countNum {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #003077;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.countText {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #8a99ae;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5a7192;
+  margin: 0;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.logoPlaceholder {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #003077 0%, #0055aa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.logoPlaceholderText {
+  color: #ffffff;
+}
+
+
+
+.viewButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #003077;
+  background: transparent;
+  border: 1px solid #003077;
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.viewButton:hover {
+  background: #003077;
+  color: #ffffff;
+}
+
+.projectsCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.projectsCountNumber {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #003077;
+}
+
+.projectsCountLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  text-transform: lowercase;
+}
+
+.projectsCountSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.projectsCountSection .projectsCountNumber {
+  font-size: 24px;
+}
+
+.projectsCountSection .projectsCountLabel {
+  font-size: 14px;
+}
+
+
+.developerDetails {
+  flex: 0 0 40%;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 32px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.developerDetails::-webkit-scrollbar {
+  width: 8px;
+}
+
+.developerDetails::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.developerDetails::-webkit-scrollbar-thumb {
+  background: #003077;
+  border-radius: 4px;
+}
+
+.developerDetails::-webkit-scrollbar-thumb:hover {
+  background: #002055;
+}
+
+.detailsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.detailsLogoContainer {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.detailsLogoPlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #003077 0%, #0055aa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.detailsLogoPlaceholderText {
+  color: #ffffff;
+}
+
+.detailsName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #003077;
+  margin: 0;
+}
+
+.description {
+  margin-bottom: 32px;
+}
+
+.description p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #003077;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.images {
+  margin-bottom: 32px;
+}
+
+.imagesTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #003077;
+  margin: 0 0 20px 0;
+}
+
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.imageItem {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.meta {
+  padding-top: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.createdAt {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  margin: 0;
+}
+
+.noSelection {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666666;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.error {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #d32f2f;
+}
+
+.noDevelopers {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #666666;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 1400px) {
+  .developersGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .developersGrid {
+    flex: 1;
+    width: 100%;
+    height: 50%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .developerDetails {
+    flex: 1;
+    width: 100%;
+    height: 50%;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 100px 20px 20px 20px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .content {
+    gap: 30px;
+  }
+
+  .developersGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .developerCard {
+    padding: 20px;
+    height: 220px;
+  }
+
+  .logoWrapper {
+    height: 100px;
+  }
+
+  .logoContainer,
+  .logoPlaceholder {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logoPlaceholder {
+    font-size: 40px;
+  }
+
+  .developerDetails {
+    padding: 24px;
+  }
+
+  .detailsName {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 12px 60px 12px;
+  }
+
+  .developersGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .developerCard {
+    height: 310px;
+  }
+
+  .developerName {
+    font-size: 15px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.paginationButton {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  background: #ffffff;
+  color: #003077;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background: #003077;
+  color: #ffffff;
+  border-color: #003077;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationNumbers {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paginationNumber {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  background: #ffffff;
+  color: #003077;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationNumber:hover {
+  background: rgba(0, 48, 119, 0.1);
+  border-color: rgba(0, 48, 119, 0.3);
+}
+
+.paginationNumber.active {
+  background: #003077;
+  color: #ffffff;
+  border-color: #003077;
+}
+
+.paginationEllipsis {
+  padding: 0 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #003077;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .pagination {
+    gap: 8px;
+    margin-top: 40px;
+  }
+
+  .paginationButton {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .paginationNumber {
+    min-width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+}

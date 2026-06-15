@@ -1,0 +1,43 @@
+{
+  "name": "website-for-you",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node -e \"const fs=require('fs');const path='.next/prerender-manifest.json';if(!fs.existsSync(path)){fs.writeFileSync(path,JSON.stringify({version:3,routes:{},dynamicRoutes:{},notFoundRoutes:[],preview:{previewModeId:'development-id',previewModeSigningKey:'development-key',previewModeEncryptionKey:'development-key'}},null,2));}\"",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.992.0",
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.0",
+    "@hookform/resolvers": "^5.2.2",
+    "@mapbox/mapbox-gl-draw": "^1.5.1",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.3.1",
+    "libphonenumber-js": "^1.12.41",
+    "mapbox-gl": "^3.16.0",
+    "markdown-pdf": "^11.0.0",
+    "marked": "^17.0.5",
+    "next": "^14.2.0",
+    "next-intl": "^3.15.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-hook-form": "^7.66.0",
+    "react-phone-input-2": "^2.15.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^3.4.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cloudinary": "^2.8.0",
+    "googleapis": "^171.4.0",
+    "typescript": "^5"
+  }
+}

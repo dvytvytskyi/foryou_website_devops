@@ -1,0 +1,115 @@
+.footer {
+  padding: 80px 5%;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 800;
+  color: #003077;
+  letter-spacing: 2px;
+}
+
+.copyright {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  color: #003077;
+  opacity: 0.4;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #003077;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  opacity: 1;
+  color: #f97316;
+}
+
+.trustInfo {
+  max-width: 1400px;
+  margin: 40px auto 0;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.disclaimer {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  color: #003077;
+  opacity: 0.4;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.legalData {
+  display: flex;
+  gap: 15px;
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 700;
+  color: #003077;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.divider {
+  opacity: 0.3;
+}
+
+.agentLink {
+  color: #f97316;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.agentLink:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

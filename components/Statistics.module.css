@@ -1,0 +1,99 @@
+.statistics {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statValue {
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  color: #003077;
+  line-height: 1;
+  margin: 0;
+}
+
+.suffix {
+  font-size: 64px;
+  font-weight: 300;
+  color: #003077;
+}
+
+.statTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #003077;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.statDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+@media (max-width: 1200px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .statValue {
+    font-size: 56px;
+  }
+
+  .suffix {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .statValue {
+    font-size: 48px;
+  }
+
+  .suffix {
+    font-size: 48px;
+  }
+
+  .statDescription {
+    max-width: 100%;
+  }
+}
+

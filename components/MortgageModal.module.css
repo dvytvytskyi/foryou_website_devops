@@ -1,0 +1,464 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 99999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.modal {
+  background: white;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  animation: modalEnter 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin: auto;
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #003077;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 48, 119, 0.05);
+}
+
+.header {
+  padding: 32px 40px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.title {
+  font-family: var(--font-eb-garamond), serif;
+  font-size: 56px;
+  color: #003077;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.title em {
+  font-style: italic;
+}
+
+.splitLayout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  padding: 32px;
+  gap: 32px;
+}
+
+.infoCol {
+  background: #dae5f2;
+  border-radius: 8px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 24px;
+  color: #003077;
+  font-weight: 500;
+  margin: 0 0 64px 0;
+  line-height: 1.3;
+}
+
+.infoFields {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.infoField {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.infoValue {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 400;
+}
+
+.formCol {
+  padding: 16px 32px 32px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 24px;
+  color: #003077;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.formSubtitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  color: #475569;
+  margin: 0 0 32px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2F6DC9;
+  box-shadow: 0 0 0 3px rgba(47, 109, 201, 0.1);
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: #2F6DC9;
+}
+
+.checkboxText {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.submitBtn {
+  width: 100%;
+  height: 56px;
+  background: #0050d5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #003b9e;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+.successState {
+  text-align: center;
+  padding: 80px 40px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.successIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(47, 109, 201, 0.05);
+  color: #2F6DC9;
+  margin-bottom: 24px;
+}
+
+.successTitle {
+  font-family: var(--font-eb-garamond), serif;
+  font-size: 40px;
+  color: #0f172a;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.successText {
+  font-family: var(--font-inter), sans-serif;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 16px;
+  }
+
+  .step1Container {
+    padding: 24px;
+  }
+
+  .splitLayout {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 16px;
+  }
+  
+  .header {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .closeButton {
+    top: 16px;
+    right: 16px;
+  }
+
+  .infoCol {
+    padding: 20px;
+  }
+
+  .infoTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .infoFields {
+    gap: 16px;
+  }
+
+  .formCol {
+    padding: 0;
+  }
+
+  .formTitle {
+    font-size: 20px;
+  }
+
+  .formSubtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    gap: 12px;
+  }
+
+  .input, .submitBtn, .mortgageSelect, .phoneInputContainer .input {
+    height: 48px !important;
+    font-size: 16px !important;
+  }
+}
+
+
+.step1Container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mortgageDescription {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+.mortgageFormRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+.mortgageFormGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.mortgageFormLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #8fa0b5;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+.mortgageSelectWrapper {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e1e8f0;
+  border-radius: 4px;
+}
+.mortgageSelect {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: none;
+  padding: 16px 40px 16px 16px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+.mortgageSelectIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #003077;
+}
+.mortgageRequestBtn {
+  background: #4A85F6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 52px;
+}
+.mortgageRequestBtn:hover {
+  background: #3a70d6;
+}
+.mortgageFooterNote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: #8fa0b5;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .step1Container {
+    padding: 24px;
+  }
+
+  .mortgageFormRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.phoneInputContainer {
+  width: 100% !important;
+}
+
+.phoneInputContainer .input {
+  width:  100% !important;
+  height: 56px !important;
+  padding-left: 50px !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px !important;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  color: #0f172a;
+  background: #fff;
+  transition: all 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.phoneInputContainer .input:focus {
+  border-color: #4A85F6;
+  box-shadow: 0 0 0 3px rgba(74, 133, 246, 0.1);
+}
+
+.phoneInputButton {
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  border-radius: 6px 0 0 6px !important;
+  padding-left: 8px !important;
+}
+
+.phoneInputDropdown {
+  width: 300px !important;
+  border-radius: 8px !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.areasList {
+  padding: 60px 0 80px 0;
+  background: #ffffff;
+  min-height: calc(100vh - 200px);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 50px 40px 40px 40px;
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 400;
+  color: #003077;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #003077;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 48, 119, 0.04);
+}
+
+.card:hover {
+  box-shadow: 0 12px 30px rgba(0, 48, 119, 0.08);
+}
+
+.cardImageSection {
+  flex: 0 0 60%;
+  position: relative;
+  background: #f0f4f8;
+  overflow: hidden;
+}
+
+.mainImage {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+
+
+.imageSkeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg,
+      rgba(0, 48, 119, 0.05) 0%,
+      rgba(0, 48, 119, 0.1) 50%,
+      rgba(0, 48, 119, 0.05) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
+}
+
+.overlappingStatsWrapper {
+  position: absolute;
+  top: 60%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 15;
+}
+
+.statsFrame {
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 48, 119, 0.05);
+  min-width: 50px;
+}
+
+.cardInfoSection {
+  flex: 0 0 40%;
+  padding: 30px 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.cardTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #003077;
+  margin: 0;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5a7192;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.projectsCount {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #003077;
+  line-height: 1.1;
+}
+
+.projectsLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  color: #8a99ae;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
+}
+
+@media (max-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .areasList {
+    padding: 80px 0 60px 0;
+  }
+
+  .container {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .areasList {
+    padding: 50px 0 40px 0;
+  }
+
+  .container {
+    padding: 30px 16px 20px 16px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: 310px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+  }
+}
+
+.error {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #dc2626;
+}
+
+.noAreas {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #003077;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.paginationButton {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  background: #ffffff;
+  color: #003077;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background: #003077;
+  color: #ffffff;
+  border-color: #003077;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationNumbers {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paginationNumber {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  background: #ffffff;
+  color: #003077;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationNumber:hover {
+  background: rgba(0, 48, 119, 0.1);
+  border-color: rgba(0, 48, 119, 0.3);
+}
+
+.paginationNumber.active {
+  background: #003077;
+  color: #ffffff;
+  border-color: #003077;
+}
+
+.paginationEllipsis {
+  padding: 0 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #003077;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .pagination {
+    gap: 8px;
+    margin-top: 40px;
+  }
+
+  .paginationButton {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .paginationNumber {
+    min-width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+}

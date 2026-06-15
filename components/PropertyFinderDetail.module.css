@@ -1,0 +1,414 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f2f4f7;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  width: 100%;
+  height: 400px;
+  background: #f2f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(93 93 93 / 40%);
+  border-radius: 20px;
+  grid-column: 1 / -1;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+}
+
+.mainInfo {
+  position: sticky;
+  top: 130px;
+  align-self: flex-start;
+}
+
+.developerLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(93 93 93 / 60%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #003077;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(93 93 93 / 60%);
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.priceSection {
+  margin-bottom: 32px;
+  padding: 32px;
+  background: #003077;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 48, 119, 0.15);
+}
+
+.priceLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 8px;
+  letter-spacing: 0.1em;
+}
+
+.priceValue {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #EBA44E;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+}
+
+.badge {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badgeOffPlan {
+  background: rgba(0, 48, 119, 0.8);
+}
+
+.badgeCompleted {
+  background: rgba(16, 185, 129, 0.8);
+}
+
+.categoryBadge {
+  background: #f8faff;
+  color: #003077;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+}
+
+.detailsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.section {
+  border-bottom: 1px solid rgba(0, 48, 119, 0.05);
+  padding-bottom: 60px;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #003077;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgb(0 0 0 / 70%);
+}
+
+.amenitiesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.amenityItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(0 0 0 / 70%);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.amenityItem::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #EBA44E;
+  border-radius: 50%;
+}
+
+.techInfo {
+  background: #f8faff;
+  padding: 32px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid rgba(0, 48, 119, 0.05);
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 48, 119, 0.05);
+  padding-bottom: 12px;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.infoLabel {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: rgb(93 93 93 / 60%);
+  font-size: 14px;
+}
+
+.infoValue {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #003077;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .mainInfo {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 12px;
+  }
+  
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .amenitiesList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.technicalGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.techItem {
+  background: #ffffff;
+  border: 1px solid rgba(0, 48, 119, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease;
+}
+
+.techItem:hover {
+  border-color: rgba(0, 48, 119, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 48, 119, 0.05);
+}
+
+.techIcon {
+  width: 44px;
+  height: 44px;
+  background: #f8faff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003077;
+  flex-shrink: 0;
+}
+
+.techContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.techLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.techValue {
+  font-size: 15px;
+  font-weight: 700;
+  color: #003077;
+}
+
+.facilityItem {
+  background: #f8faff;
+  color: #003077;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 48, 119, 0.08);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.facilitiesSection {
+  margin-top: 32px;
+}
+
+.facilitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.reraCertificate {
+  background: #f8faff;
+  border: 1px solid rgba(0, 48, 119, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.reraHeader {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.reraIcon {
+  width: 48px;
+  height: 48px;
+  background: #eff6ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reraTitle h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #003077;
+  margin: 0 0 4px 0;
+}
+
+.reraTitle p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}
+
+.reraBody {
+  border-top: 1px solid rgba(0, 48, 119, 0.05);
+  padding-top: 20px;
+}
+
+.reraLabelRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reraField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reraField span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.reraField strong {
+  font-size: 14px;
+  color: #003077;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .technicalGrid {
+    grid-template-columns: 1fr;
+  }
+}

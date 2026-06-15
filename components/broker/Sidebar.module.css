@@ -1,0 +1,121 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid rgba(0, 48, 119, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebarHeader {
+  padding: 32px 24px;
+  border-bottom: 1px solid rgba(0, 48, 119, 0.1);
+}
+
+.sidebarTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #003077;
+  margin: 0;
+}
+
+.nav {
+  flex: 1;
+  padding: 24px 0;
+  overflow-y: auto;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  color: #666666;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.navItem:hover {
+  background: rgba(0, 48, 119, 0.05);
+  color: #003077;
+}
+
+.navItem.active {
+  background: rgba(0, 48, 119, 0.05);
+  color: #003077;
+  border-left-color: #003077;
+  font-weight: 500;
+}
+
+.navItem svg {
+  flex-shrink: 0;
+}
+
+.sidebarFooter {
+  padding: 24px;
+  border-top: 1px solid rgba(0, 48, 119, 0.1);
+  margin-top: auto;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  color: #c82333;
+}
+
+.logoutButton svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 48, 119, 0.1);
+  }
+
+  .sidebarHeader {
+    padding: 24px 20px;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .navItem {
+    padding: 12px 20px;
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 48, 119, 0.05);
+  }
+
+  .navItem.active {
+    border-left: none;
+    border-bottom-color: #003077;
+  }
+}
+

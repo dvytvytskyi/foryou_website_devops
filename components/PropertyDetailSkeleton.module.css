@@ -1,0 +1,269 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-color: #f2f4f7;
+  }
+
+  50% {
+    background-color: #e5e9ef;
+  }
+
+  100% {
+    background-color: #f2f4f7;
+  }
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 24px 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumbSkeleton {
+  height: 14px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.breadcrumbSkeleton:nth-child(1) {
+  width: 80px;
+}
+
+.breadcrumbSkeleton:nth-child(2) {
+  width: 100px;
+}
+
+.breadcrumbSkeleton:nth-child(3) {
+  width: 150px;
+}
+
+.heroSection {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.heroImageSkeleton {
+  width: 100%;
+  height: 500px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 60px 24px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.leftColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.mainInfo {
+  margin-bottom: 40px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.titleSkeleton {
+  width: 70%;
+  height: 32px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.locationSkeleton {
+  width: 40%;
+  height: 18px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.priceSection {
+  margin-bottom: 24px;
+}
+
+.priceSkeleton {
+  width: 200px;
+  height: 36px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.paymentPlanSkeleton {
+  width: 150px;
+  height: 18px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.details {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.detailItemSkeleton {
+  width: 100px;
+  height: 20px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.developerSkeleton {
+  width: 50%;
+  height: 18px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.descriptionSection {
+  margin-bottom: 40px;
+}
+
+.sectionTitleSkeleton {
+  width: 150px;
+  height: 24px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.descriptionLine {
+  width: 100%;
+  height: 16px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.facilitiesSection {
+  margin-bottom: 40px;
+}
+
+.facilitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.facilityItemSkeleton {
+  width: 120px;
+  height: 32px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 16px;
+}
+
+.mapSection {
+  margin-bottom: 40px;
+}
+
+.mapSkeleton {
+  width: 100%;
+  height: 400px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 8px;
+}
+
+.rightColumn {
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.investmentFormSkeleton {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.formTitleSkeleton {
+  width: 200px;
+  height: 24px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.formFieldSkeleton {
+  width: 100%;
+  height: 48px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.formButtonSkeleton {
+  width: 100%;
+  height: 48px;
+  background: #f2f4f7;
+  animation: skeleton-pulse 1.8s infinite ease-in-out;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .rightColumn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroImageSkeleton {
+    height: 300px;
+  }
+
+  .titleSkeleton {
+    width: 90%;
+  }
+
+  .locationSkeleton {
+    width: 60%;
+  }
+
+  .priceSkeleton {
+    width: 150px;
+  }
+
+  .mapSkeleton {
+    height: 300px;
+  }
+}

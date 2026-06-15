@@ -1,0 +1,626 @@
+{
+  "header": {
+    "signIn": "Sign In",
+    "register": "Register",
+    "likes": "Liked",
+    "nav": {
+      "home": "Home",
+      "properties": "Properties",
+      "map": "Map",
+      "areas": "Areas",
+      "developers": "Developers",
+      "aboutUs": "About Us",
+      "projects": "Projects",
+      "news": "News",
+      "careers": "Careers",
+      "catalog": "Catalog"
+    }
+  },
+  "hero": {
+    "title": "Discover Homes That Inspire the Modern World in Dubai",
+    "subtitle": "WE TAKE CARE OF THE ENTIRE DEAL PROCESS FROM PURCHASE TO SALE, MARKETING PLACEMENT AND RENTAL",
+    "search": {
+      "placeholder": "Search by area name",
+      "bedrooms": "Bedrooms",
+      "bedroomsAll": "All",
+      "searchButton": "Search Properties"
+    }
+  },
+  "areas": {
+    "title": "These are popular locations to live in Dubai",
+    "description": "Discover the most attractive neighborhoods in Dubai, each offering a unique lifestyle, convenient amenities, and excellent investment potential.",
+    "projects": "PROPERTIES",
+    "pageTitle": "Areas",
+    "pageDescription": "Explore all the amazing neighborhoods in Dubai. Each area offers unique opportunities for living and investment.",
+    "loading": "Loading areas...",
+    "noAreas": "No areas found",
+    "page": "Page",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "aboutUs": {
+    "header": "ABOUT US",
+    "title": "Discover Our Journey to Real Estate Excellence",
+    "description1": "\"For You Real Estate\" - a real estate agency in Dubai, which is part of For You Group, a financial concierge.",
+    "description2": "We use the one-stop-shop principle for our clients. Just save a few contacts in your phone and almost any financial question will be solved, from asset management to helping you find great apartments abroad.",
+    "cta": "ABOUT US",
+    "image1Alt": "Modern Dubai property",
+    "image2Alt": "Real estate team",
+    "stat1": "Years of real estate experience",
+    "stat2": "Apartments",
+    "heroTitle1": "FOR YOU the",
+    "heroTitle2": "Real Estate story.",
+    "heroDescription": "We believe that real estate is more than just creating buildings it's about shaping experiences, fostering connections & enhancing communities.",
+    "heroSubDescription": "Here's what we're all about",
+    "heroImageAlt": "Modern real estate buildings",
+    "stat1Number": "4",
+    "stat1Label": "Years of real estate experience",
+    "stat2Number": "500+",
+    "stat2Label": "Apartments",
+    "stat3Number": "1000+",
+    "stat3Label": "Clients",
+    "stat4Number": "99%",
+    "stat4Label": "Customer satisfaction rate",
+    "milestonesTitle": "Our Historical Milestones",
+    "milestonesDescription": "At ForYou, our journey reflects vision, growth, and a steadfast commitment to excellence.",
+    "milestone2022": {
+      "year": "2022",
+      "shortTitle": "First Major Project",
+      "boldTitle": "A Milestone Achievement",
+      "description": "By 2022, ForYou had completed its first major project. This project was a testament to our innovative approach and commitment to quality, earning us early recognition in the industry."
+    },
+    "milestone2023": {
+      "year": "2023",
+      "shortTitle": "Team Growth",
+      "boldTitle": "Building A Strong Team",
+      "description": "In 2023, we significantly expanded our team, bringing in diverse talents and expertise. Our team's growth has been crucial in continuing to deliver high-quality, innovative solutions."
+    },
+    "milestone2024": {
+      "year": "2024",
+      "shortTitle": "Market Expansion",
+      "boldTitle": "Reaching New Heights",
+      "description": "In 2024, we expanded our presence in the Dubai real estate market, establishing key partnerships and launching multiple successful projects that set new industry standards."
+    },
+    "milestone2025": {
+      "year": "2025",
+      "shortTitle": "Looking Ahead",
+      "boldTitle": "The Future Of Real Estate",
+      "description": "As we look to the future, ForYou remains committed to innovation, excellence, and sustainability. We are excited about upcoming projects and opportunities to further our impact in the world of real estate."
+    },
+    "partnersTitle": "We Partner With",
+    "teamTitle": "Our Team",
+    "teamDescription": "Meet the talented individuals who drive our company's success with their dedication, expertise, and passion for innovation.",
+    "teamMembers": {
+      "daniil": "Daniil",
+      "daniilRole": "Real Estate Expert",
+      "ruslan": "Ruslan",
+      "ruslanRole": "Real Estate Consultant",
+      "kamila": "Kamila",
+      "kamilaRole": "Real Estate Consultant",
+      "ekaterina": "Ekaterina",
+      "ekaterinaRole": "Property Consultant"
+    },
+    "officeTitle": "Our Office",
+    "officeDescription": "Visit us at our office in Dubai. Schedule a meeting to discuss your real estate needs with our expert team.",
+    "officeForm": {
+      "title": "Schedule a Meeting",
+      "dateLabel": "Select Date",
+      "timeLabel": "Select Time",
+      "specialistLabel": "Preferred Specialist (Optional)",
+      "specialistPlaceholder": "Choose a specialist",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "Enter your phone",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "messageLabel": "Additional Notes",
+      "messagePlaceholder": "Any additional information...",
+      "submitButton": "Book Meeting"
+    },
+    "leadersTitle": "About The Leadership Team",
+    "leaders": {
+      "artem": {
+        "name": "Artem Gerasimov",
+        "description": "15 years of experience in Russian and international companies within the financial and banking sectors. Extensive background in working with high-net-worth individuals (HNWIs), including asset management, investment advisory, and business development. Proven track record of building trusted client relationships, growing portfolios, and delivering tailored financial solutions in a highly competitive environment."
+      },
+      "nikita": {
+        "name": "Nikita Dyakov",
+        "description": "Over 10 years of experience in the financial sector. Gained experience working in both Russian and international companies such as Citibank and Alfa-Bank, where he worked with high-net-worth clients, and Alfa Asset Management Europe (Luxembourg), where he held the position of Business Development Director."
+      },
+      "antony": {
+        "name": "Antony",
+        "description": "7+ years of experience in organizing events for international audiences in Russia and the UAE. Planned and executed a wide range of corporate, cultural, and lifestyle events tailored to expatriate communities, with a strong emphasis on cross-cultural communication, partnership development, and brand visibility. Over 4 years of experience in business and real estate across Russia and Dubai. Actively involved in property transactions, market analysis, and investment consulting. Built and managed relationships with clients and partners in both regions, contributing to business growth and successful deal closures in dynamic and competitive markets."
+      },
+      "gulnoza": {
+        "name": "Gulnoza",
+        "description": "3.5+ years of experience in the Dubai real estate market, with a strong focus on client relations and strategic partnerships. Successfully worked with high-net-worth individuals, international investors, and key business partners to facilitate property transactions, provide tailored investment solutions, and build long-term trust-based relationships."
+      }
+    },
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "faqTitle": "Frequently Asked Questions",
+    "faq": [
+      {
+        "question": "What types of properties do you offer?",
+        "answer": "We offer a wide range of properties including off-plan developments, secondary market properties, apartments, villas, penthouses, and townhouses across Dubai."
+      },
+      {
+        "question": "How can I schedule a viewing?",
+        "answer": "You can schedule a viewing by filling out the contact form on our website, calling us directly, or visiting our office. Our team will be happy to arrange a convenient time for you."
+      },
+      {
+        "question": "Do you assist with property financing?",
+        "answer": "Yes, we work with trusted financial partners to help our clients find the best financing options. We can assist with mortgage applications and connect you with reputable banks in the UAE."
+      },
+      {
+        "question": "What areas in Dubai do you cover?",
+        "answer": "We cover all major areas in Dubai including Downtown Dubai, Dubai Marina, Business Bay, JVC, Palm Jumeirah, and many other premium locations. Visit our Areas page to see all available locations."
+      },
+      {
+        "question": "Can I buy property as a foreigner?",
+        "answer": "Yes, Dubai allows foreigners to own freehold properties in designated areas. Our team can guide you through the entire process and help you understand all legal requirements."
+      },
+      {
+        "question": "Do you offer property management services?",
+        "answer": "Absolutely. For You Real Estate provides comprehensive property management services, including tenant screening, rent collection, maintenance coordination, and legal compliance, ensuring your investment is hassle-free."
+      }
+    ],
+    "faqContactTitle": "Still have questions?",
+    "faqContactText": "Can't find the answer to your question? Send us an email and we'll get back to you as soon as possible!",
+    "faqContactButton": "Send email"
+  },
+  "services": {
+    "financialServices": {
+      "title": "Financial Services",
+      "description": "Personalized support for asset structuring, investment strategy, and wealth protection."
+    },
+    "uaeBank": {
+      "title": "UAE Bank Account",
+      "description": "Full assistance in opening personal or corporate accounts in the UAE."
+    },
+    "georgiaBank": {
+      "title": "Georgia Bank Account",
+      "description": "Hassle-free account opening in Georgian banks with full documentation support."
+    },
+    "buySell": {
+      "title": "Buy/Sell Real Estate",
+      "description": "Premium real estate selection and full transaction management in multiple countries."
+    }
+  },
+  "projectImage": {
+    "title": "Address Residences Zabeel",
+    "description": "Address Residences Zabeel is a premium landmark development by Emaar, standing tall in the heart of Zabeel Park. Offering breathtaking panoramic views of the Dubai skyline and Zabeel Park, these luxurious residences combine the world-renowned Address Hotels + Resorts hospitality with sophisticated urban living.",
+    "features": {
+      "bedrooms": "1-3 Bedrooms",
+      "bathrooms": "Modern Suites",
+      "park": "Zabeel Park Views"
+    },
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "form": {
+      "title": "Get in Touch",
+      "description": "Contact us to learn more about this exclusive project and schedule a viewing.",
+      "name": "Name",
+      "phone": "Phone",
+      "send": "Send",
+      "success": "Message sent successfully!",
+      "note": "By submitting this form, you agree to our privacy policy and consent to being contacted by our team."
+    }
+  },
+  "statistics": {
+    "yearsExperience": {
+      "title": "Years of real estate experience",
+      "description": ""
+    },
+    "propertiesSold": {
+      "title": "Apartments",
+      "description": ""
+    },
+    "happyClients": {
+      "title": "Clients",
+      "description": ""
+    },
+    "customerSatisfaction": {
+      "title": "Customer satisfaction rate",
+      "description": ""
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 ForYou Real Estate. All rights reserved.",
+    "language": "Language",
+    "tagline": "Discover Homes That Inspire the Modern World in Dubai",
+    "contactUs": "Contact Us",
+    "popularAreas": "Popular Areas",
+    "topDevelopers": "Top Developers",
+    "navigation": {
+      "title": "Quick Search",
+      "home": "Home",
+      "properties": "Properties",
+      "map": "Map",
+      "areas": "Areas",
+      "developers": "Developers",
+      "projects": "Projects",
+      "about": "About Us",
+      "news": "News",
+      "careers": "Careers"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "store": "Store"
+    },
+    "download": {
+      "title": "Download App",
+      "appStore": "Download on the App Store",
+      "appStoreSubtext": "Download on the",
+      "appStoreMaintext": "App Store",
+      "googlePlay": "Get it on Google Play",
+      "googlePlaySubtext": "GET IT ON",
+      "googlePlayMaintext": "Google Play"
+    },
+    "followUs": "Follow Us",
+    "login": "Login"
+  },
+  "properties": {
+    "title": "Properties",
+    "resultsCount": "{count, plural, =0 {No properties found} one {# property found} other {# properties found}}",
+    "showing": "Showing {count} properties",
+    "loading": "Loading properties...",
+    "errorLoading": "Error loading properties",
+    "retry": "Retry",
+    "noProperties": "No properties found",
+    "previous": "Previous",
+    "next": "Next",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {current} of {total}"
+    }
+  },
+  "propertyCard": {
+    "exclusiveForYou": "Exclusive ForYou",
+    "type": {
+      "new": "New Building",
+      "offPlan": "Off Plan",
+      "secondary": "Secondary"
+    },
+    "developer": "Developer",
+    "from": "From",
+    "priceOnRequest": "On request",
+    "viewAllPhotos": "View All Photos"
+  },
+  "filters": {
+    "title": "Filters",
+    "city": {
+      "placeholder": "City",
+      "all": "All Cities"
+    },
+    "developer": {
+      "placeholder": "Developer",
+      "all": "All Developers"
+    },
+    "type": {
+      "offPlan": "Off Plan",
+      "secondary": "Secondary"
+    },
+    "search": {
+      "placeholder": "Find by project name"
+    },
+    "location": {
+      "placeholder": "Location",
+      "selected": "Selected",
+      "all": "All areas"
+    },
+    "area": {
+      "placeholder": "All areas",
+      "all": "All areas",
+      "selected": "Selected"
+    },
+    "status": {
+      "placeholder": "Status",
+      "any": "Any Status"
+    },
+    "amenities": {
+      "placeholder": "Amenities",
+      "selected": "Selected"
+    },
+    "bedrooms": {
+      "placeholder": "Bedrooms",
+      "bedroom": "bedroom",
+      "selected": "selected"
+    },
+    "size": {
+      "placeholder": "Size",
+      "from": "From",
+      "to": "To"
+    },
+    "price": {
+      "placeholder": "Price",
+      "from": "From",
+      "to": "To"
+    },
+    "sort": {
+      "placeholder": "Sort",
+      "priceHigher": "Price Higher",
+      "priceLower": "Price Lower",
+      "sizeHigher": "Size Higher",
+      "sizeLower": "Size Lower",
+      "newest": "Newest First"
+    },
+    "apply": "Apply Filters",
+    "reset": "Reset",
+    "showFilters": "Show More Filters",
+    "hideFilters": "Hide Filters",
+    "completionDate": {
+      "placeholder": "Completion Date",
+      "any": "Any Year"
+    }
+  },
+  "propertyDetail": {
+    "loading": "Loading...",
+    "notFound": "Property not found",
+    "goBack": "Go Back",
+    "developer": "Developer",
+    "description": "Description",
+    "facilities": "Facilities",
+    "availableUnits": "Available Units",
+    "location": "Location",
+    "priceOnRequest": "Price on request",
+    "sizeOnRequest": "Size on request",
+    "from": "From",
+    "sqm": "sqm",
+    "sqft": "sq.ft",
+    "beds": "{count, plural, one {bed} other {beds}}",
+    "baths": "{count, plural, one {bath} other {baths}}",
+    "balcony": "balcony",
+    "similarProperties": "Similar Properties",
+    "paymentPlan": "Payment Plan",
+    "readiness": "Readiness",
+    "aboutDeveloper": "About Developer",
+    "developerPhotos": "Developer Photos",
+    "aboutArea": "About Area",
+    "areaPhotos": "Area Photos",
+    "paymentTimes": {
+      "onBooking": "On Booking",
+      "duringConstruction": "During Construction",
+      "uponHandover": "Upon Handover"
+    }
+  },
+  "investment": {
+    "title": "Submit Investment Request",
+    "description": "Fill out the form below to submit your investment request.",
+    "agentName": "Ruslan",
+    "agentRole": "Real Estate Consultant",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Surname",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "phone": "Phone",
+    "phonePlaceholder": "+971501234567",
+    "amount": "Investment Amount",
+    "date": "Investment Date",
+    "notes": "Notes",
+    "notesPlaceholder": "Any additional information...",
+    "optional": "Optional",
+    "submit": "Submit Investment",
+    "submitting": "Submitting...",
+    "submitError": "Failed to submit investment",
+    "successTitle": "Investment Submitted!",
+    "successMessage": "Your investment request has been submitted successfully. We will contact you soon.",
+    "termsMessage": "When sending, I agree to terms and conditions."
+  },
+  "developers": {
+    "pageTitle": "Developers",
+    "loading": "Loading developers...",
+    "viewButton": "View",
+    "images": "Images",
+    "createdAt": "Established",
+    "noSelection": "Select a developer to view details",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "areaDetail": {
+    "loading": "Loading area details...",
+    "notFound": "Area not found",
+    "offPlanProperties": "Off Plan Properties",
+    "viewAllSecondary": "View All Secondary Properties",
+    "projects": "Projects",
+    "properties": "Properties"
+  },
+  "news": {
+    "pageTitle": "News",
+    "loading": "Loading news...",
+    "latestNews": "Latest News",
+    "viewAll": "View All"
+  },
+  "newsDetail": {
+    "loading": "Loading news article...",
+    "notFound": "News article not found",
+    "recommendedProjects": "Recommended Projects",
+    "category": "Market",
+    "relatedTitle": "Related",
+    "relatedTitleAccent": "News",
+    "seeAll": "See all",
+    "by": "By",
+    "author": {
+      "writtenBy": "Written by",
+      "role": "Real Estate Expert",
+      "specialization": "Investment Consultant",
+      "languages": "English, Russian",
+      "whatsapp": "Message {name} on WhatsApp",
+      "bookCall": "Book a Free Consultation",
+      "formTitle": "Interested in properties?",
+      "nameLabel": "Your Name",
+      "phoneLabel": "Phone Number",
+      "submitButton": "Contact Us",
+      "successMessage": "Thank you! We will contact you shortly."
+    }
+  },
+  "auth": {
+    "loginTitle": "Sign In",
+    "loginSubtitle": "Welcome back! Please sign in to your account",
+    "registerTitle": "Create Account",
+    "registerSubtitle": "Join us and start your real estate journey",
+    "forgotPasswordTitle": "Reset Password",
+    "forgotPasswordSubtitle": "Enter your email address and we'll send you a verification code",
+    "verifyCodeSubtitle": "Enter the 6-digit code sent to your email",
+    "resetPasswordSubtitle": "Enter your new password",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Enter your new password",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "John",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Doe",
+    "phone": "Phone",
+    "phonePlaceholder": "+1234567890",
+    "role": "Role",
+    "roleClient": "Client",
+    "roleBroker": "Broker",
+    "roleInvestor": "Investor",
+    "licenseNumber": "License Number",
+    "licenseNumberPlaceholder": "Enter your license number",
+    "verificationCode": "Verification Code",
+    "forgotPassword": "Forgot Password?",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "sendCode": "Send Code",
+    "verifyCode": "Verify Code",
+    "resetPasswordButton": "Reset Password",
+    "loading": "Loading...",
+    "or": "or",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Sign up",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Sign in",
+    "backToLogin": "Back to Login",
+    "changeEmail": "Change Email",
+    "codeSentTo": "Code sent to",
+    "loginError": "Invalid email or password",
+    "registerError": "Registration failed. Please try again",
+    "forgotPasswordError": "Failed to send code. Please try again",
+    "verifyCodeError": "Invalid or expired code",
+    "resetPasswordError": "Failed to reset password. Please try again",
+    "registrationSuccess": "Account Created Successfully!",
+    "registrationSuccessText": "Your account has been created. You can now sign in.",
+    "pendingApprovalTitle": "Pending Approval",
+    "pendingApprovalText": "Your account has been created and is pending approval. You will receive a notification once your account is activated.",
+    "resetPasswordSuccess": "Password Reset Successful!",
+    "resetPasswordSuccessText": "Your password has been reset successfully. You can now sign in with your new password."
+  },
+  "broker": {
+    "dashboardTitle": "Broker Dashboard",
+    "knowledgeBase": "Knowledge Base",
+    "totalCourses": "Total Courses",
+    "completedCourses": "Completed Courses",
+    "inProgressCourses": "In Progress",
+    "completionRate": "Completion Rate",
+    "sections": "sections",
+    "links": "links",
+    "loading": "Loading...",
+    "backToCourses": "Back to Courses",
+    "externalLinks": "External Links",
+    "courseNotFound": "Course not found",
+    "logout": "Log Out"
+  },
+  "careers": {
+    "pageTitle": "Careers",
+    "bannerText": "Join our team of professionals and build the future of real estate with us.",
+    "loading": "Loading vacancies...",
+    "noVacancies": "No vacancies found at the moment.",
+    "applyButton": "Apply Now",
+    "form": {
+      "title": "Apply for this position",
+      "close": "Close",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Cover Letter (Optional)",
+      "cvUrl": "Link to CV or Portfolio (Optional)",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "phonePlaceholder": "+971 ...",
+      "cvUrlPlaceholder": "Link to your CV",
+      "messagePlaceholder": "Tell us a bit about yourself...",
+      "submit": "Submit Application",
+      "success": "Your application has been submitted successfully!",
+      "error": "Failed to submit application. Please try again."
+    },
+    "sections": {
+      "tasks": "What You Will Do",
+      "requirements": "Requirements",
+      "results": "Expected Results",
+      "offers": "What We Offer"
+    },
+    "views": "Views",
+    "publishedAt": "Published",
+    "goTop": "Go to top"
+  },
+  "metadata": {
+    "home": "Buy Property in Dubai | ForYou Real Estate | 0% Commission & High ROI",
+    "homeDescription": "Find your dream home or investment in Dubai. Exclusive villas, apartments, and off-plan projects from top developers. Full legal support & 10-year Golden Visa assistance.",
+    "properties": "Dubai Properties for Sale | Best Prices & Luxury Listings | ForYou",
+    "propertiesDescription": "Explore our curated catalog of Dubai real estate. From affordable studios to premium penthouses. Daily updates, direct prices from developers, and virtual tours.",
+    "map": "Interactive Dubai Map",
+    "mapDescription": "Use an interactive Dubai real estate map to find properties by area, price, bedrooms, and type. Compare listings visually and discover investment hotspots faster.",
+    "areas": "Best Areas to Live in Dubai",
+    "areasDescription": "Explore Dubai areas for living and investment, with district insights, lifestyle highlights, and market context to help you choose locations with strong growth potential.",
+    "developers": "Top Dubai Developers",
+    "developersDescription": "Browse top Dubai developers, compare their projects, track delivery reputation, and find trusted off-plan and ready properties for secure long-term investment.",
+    "about": "ForYou Real Estate",
+    "aboutDescription": "Learn about ForYou Real Estate in Dubai, our expert team, transaction support, and investment approach focused on transparent guidance and strong client outcomes.",
+    "news": "Dubai Real Estate News",
+    "newsDescription": "Read timely Dubai real estate news, market analysis, legal updates, and investment insights to make informed property decisions in a rapidly changing market.",
+    "careers": "Real Estate Jobs in Dubai"
+    ,"careersDescription": "Explore real estate careers in Dubai at ForYou: broker roles, growth opportunities, training, and a performance-focused team working with premium properties and investors."
+  },
+  "developerDetail": {
+    "aboutTitle": "About Developer",
+    "galleryTitle": "Gallery",
+    "projectsTitle": "Developer Projects",
+    "offPlan": "Off-plan",
+    "secondary": "Secondary",
+    "avgPricesTitle": "Average Prices",
+    "areasTitle": "Areas of Operation",
+    "communitiesTitle": "Featured Communities",
+    "showMoreImages": "Show More Images"
+  },
+  "callback": {
+    "title": "Request a Call",
+    "subtitle": "Leave your details and we will contact you shortly.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "John Doe",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+971 50 123 4567",
+    "emailLabel": "Email (Optional)",
+    "emailPlaceholder": "example@mail.com",
+    "submitButton": "Request Call",
+    "sending": "Sending...",
+    "disclaimer": "By submitting this form, you agree to our privacy policy.",
+    "successTitle": "Thank You!",
+    "successSubtitle": "Your request has been sent successfully. We will call you soon."
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Oops! Page Not Found",
+    "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "backHome": "Back to Home",
+    "contactSupport": "Contact Support"
+  },
+  "cookieConsent": {
+    "message": "We use cookies to improve your experience on our site. By using our site, you agree to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "learnMore": "Learn More"
+  }
+}

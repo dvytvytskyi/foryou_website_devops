@@ -1,0 +1,135 @@
+.container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  pointer-events: none;
+}
+
+.content {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 8px 32px rgba(0, 48, 119, 0.12);
+  border-radius: 20px;
+  padding: 20px 24px;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  pointer-events: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.text p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #003077;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.learnMore {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #EBA44E;
+  text-decoration: underline;
+  font-weight: 500;
+  width: fit-content;
+  transition: opacity 0.2s ease;
+}
+
+.learnMore:hover {
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.acceptButton,
+.declineButton {
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  white-space: nowrap;
+}
+
+.acceptButton {
+  background: #003077;
+  color: #ffffff;
+}
+
+.acceptButton:hover {
+  background: #002355;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 48, 119, 0.2);
+}
+
+.declineButton {
+  background: rgba(0, 48, 119, 0.05);
+  color: #003077;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+}
+
+.declineButton:hover {
+  background: rgba(0, 48, 119, 0.1);
+  border-color: rgba(0, 48, 119, 0.2);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .acceptButton,
+  .declineButton {
+    flex: 1;
+    text-align: center;
+    padding: 12px 16px;
+  }
+}

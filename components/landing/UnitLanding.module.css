@@ -1,0 +1,351 @@
+.unitLanding {
+  background: #fdfdfd;
+  min-height: 100vh;
+}
+
+.heroSection {
+  background: #0b1a31;
+  color: #fff;
+  padding: 80px 5%;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.planContainer {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  height: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.exclusiveBadge {
+  background: #d4a017;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.unitTitle {
+  font-size: 3rem;
+  margin: 20px 0;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.locationTag {
+  opacity: 0.8;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.mainMetrics {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metLabel {
+  opacity: 0.6;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.metVal {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d4a017;
+}
+
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainBtn {
+  background: #d4a017;
+  color: #fff;
+  padding: 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.secBtn {
+  background: transparent;
+  color: #fff;
+  padding: 18px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.techItem {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.statusBadge {
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.Available { background: #27ae60; color: #fff; }
+.SoldOut { background: #e74c3c; color: #fff; }
+.Resale { background: #3498db; color: #fff; }
+
+.aiSpecs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.aiSpecs span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.paymentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.paymentCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.payPercent {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #d4a017;
+}
+
+.payStage {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.whatsappBtn {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reraNumber {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888;
+}
+
+.agentSection {
+  background: #f8faff;
+  padding: 40px 0;
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.agentCard {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.agentPhoto img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.agentInfo h4 {
+  font-size: 1.2rem;
+  color: #0b1a31;
+  margin-bottom: 5px;
+}
+
+.agentInfo p {
+  color: #666;
+  font-size: 14px;
+}
+
+.agentLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d4a017;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.similarGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.similarCard {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.similarCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.legalNotice {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sectionTitleH3 {
+  font-size: 1.8rem;
+  color: #0b1a31;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.rationaleGrid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 50px;
+  align-items: center;
+}
+
+.checkList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.checkList li {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #0b1a31;
+}
+
+.roiBox {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.roiCircle {
+  width: 120px;
+  height: 120px;
+  border: 6px solid #d4a017;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.roiVal {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0b1a31;
+}
+
+.roiLabel {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.linkBack {
+  display: inline-block;
+  margin-top: 30px;
+  color: #0b1a31;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .heroGrid, .rationaleGrid {
+    grid-template-columns: 1fr;
+  }
+  .planContainer {
+    height: 350px;
+  }
+}

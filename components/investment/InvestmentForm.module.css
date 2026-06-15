@@ -1,0 +1,387 @@
+.formContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #003077;
+  margin: 0 0 8px 0;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgb(93 93 93 / 80%);
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+
+.topIsland,
+.bottomIsland {
+  background: #ffffff;
+  border: 1px solid rgba(0, 48, 119, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.topIsland {
+  margin-bottom: 16px;
+}
+
+.islandTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #003077;
+  margin: 0 0 6px;
+}
+
+.islandDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgb(93 93 93 / 80%);
+  line-height: 1.4;
+  margin: 0 0 14px;
+}
+
+.error {
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #c33;
+}
+
+.success {
+  text-align: center;
+  padding: 32px;
+  background: #f0f9ff;
+  border-radius: 12px;
+}
+
+.success svg {
+  color: #22c55e;
+  margin-bottom: 16px;
+}
+
+.success h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #003077;
+  margin: 0 0 8px 0;
+}
+
+.success p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgb(93 93 93 / 80%);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #003077;
+}
+
+.input {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #003077;
+}
+
+.input::placeholder {
+  color: rgb(93 93 93 / 60%);
+}
+
+.inputError {
+  border-color: #dc3545;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.errorMessage {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #dc3545;
+  margin-top: -4px;
+}
+
+.submitButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 24px;
+  background: #003077;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #002366;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.termsMessage {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: rgb(93 93 93 / 80%);
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.agentSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.directContact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.amountSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 0 2px;
+}
+
+.amountLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #003077;
+}
+
+.amountValue {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e39a44;
+  line-height: 1.2;
+}
+
+.phoneRow {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.contactPhone,
+.contactWhatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+}
+
+.contactPhone {
+  flex: 1;
+  background: #ffffff;
+  color: #003077;
+}
+
+.contactPhone:hover {
+  background: #f8faff;
+  border-color: #003077;
+}
+
+.contactLike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+  background: #ffffff;
+  color: #003077;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contactLike:hover {
+  background: #f8faff;
+  border-color: #003077;
+}
+
+.contactLike.active {
+  background: #003077;
+  color: #ffffff;
+  border-color: #003077;
+}
+
+.contactLike svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contactWhatsapp {
+  width: 100%;
+  background: #25D366;
+  color: #ffffff;
+}
+
+.contactWhatsapp:hover {
+  background: #1da851;
+  border-color: #1da851;
+}
+
+@media (max-width: 480px) {
+  .directContact {
+    grid-template-columns: 1fr;
+  }
+}
+
+.agentAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(93 93 93 / 60%);
+  flex-shrink: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+}
+
+.agentAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.avatarFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #f0f4f8;
+  color: #003077;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.agentInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.agentName {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #003077;
+  margin-bottom: 4px;
+}
+
+.agentRole {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgb(93 93 93 / 60%);
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 0 12px;
+  }
+
+  .topIsland,
+  .bottomIsland {
+    padding: 14px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .mobileHidden {
+    display: none !important;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,81 @@
+.skeletonCard {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 48, 119, 0.04);
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+}
+
+.skeletonImageSection {
+  flex: 0 0 60%;
+  width: 100%;
+  background: linear-gradient(90deg,
+      #f8fafc 0%,
+      #f1f5f9 50%,
+      #f8fafc 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeletonInfoSection {
+  flex: 0 0 40%;
+  padding: 30px 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  background: #ffffff;
+}
+
+.skeletonTitle {
+  width: 60%;
+  height: 18px;
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.skeletonDescription {
+  width: 90%;
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.skeletonDescriptionShort {
+  width: 70%;
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.skeletonStats {
+  width: 40%;
+  height: 12px;
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .skeletonCard {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skeletonCard {
+    height: 310px;
+  }
+}

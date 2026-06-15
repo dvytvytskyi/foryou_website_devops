@@ -1,0 +1,54 @@
+# ForYou Real Estate - Search Engine Optimization
+User-agent: *
+Allow: /
+Allow: /en/
+Allow: /ru/
+
+# Disallow admin, private, and internal paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /.git/
+Disallow: /login
+Disallow: /ru/login
+Disallow: /favorites
+Disallow: /ru/favorites
+Disallow: /eng
+Disallow: */landing/
+Disallow: */properties/
+Disallow: /en/landing/
+Disallow: /ru/landing/
+Disallow: /en/properties/
+Disallow: /ru/properties/
+Disallow: /search/
+Disallow: /filter/
+Disallow: /developers/*
+Disallow: /en/developers/*
+Disallow: /ru/developers/*
+
+# Allow specific bot crawlers for indexing
+User-agent: Googlebot
+Allow: /
+Disallow: /developers/*
+Disallow: /en/developers/*
+Disallow: /ru/developers/*
+
+User-agent: Bingbot
+Allow: /
+Disallow: /developers/*
+Disallow: /en/developers/*
+Disallow: /ru/developers/*
+
+User-agent: Slurp
+Allow: /
+Disallow: /developers/*
+Disallow: /en/developers/*
+Disallow: /ru/developers/*
+
+# Crawl delay for other bots
+User-agent: *
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Sitemap locations
+Sitemap: https://foryou-realestate.com/sitemap.xml

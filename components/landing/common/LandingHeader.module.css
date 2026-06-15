@@ -1,0 +1,134 @@
+.floatingNav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 48, 119, 0.1);
+  padding: 14px 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 12px 40px rgba(0, 48, 119, 0.04);
+  
+  
+  opacity: 0;
+  animation: fadeInDown 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.navLogo .logoImg {
+  height: 20px;
+  object-fit: contain;
+}
+
+.navAnchors {
+  display: flex;
+  gap: 35px;
+}
+
+.navAnchors a {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+  letter-spacing: 0.2px;
+  text-transform: none;
+  transition: opacity 0.3s;
+}
+
+.navAnchors a:hover {
+  opacity: 0.5;
+}
+
+.navActions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  
+}
+
+.iconLink svg {
+  width: 18px;
+  height: 18px;
+}
+
+.telegramIcon {
+  background-color: #0088cc;
+}
+
+.whatsappIcon {
+  background-color: #25D366;
+}
+
+.iconLink:hover {
+  transform: scale(1.05);
+  
+}
+
+.navDivider {
+  width: 1px;
+  height: 16px;
+  background: rgba(0, 48, 119, 0.15);
+  margin: 0 10px;
+}
+
+.navPhoneWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phoneIcon {
+  color: var(--accent-color);
+  opacity: 0.8;
+}
+
+.navPhone {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.navPhone:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .navAnchors {
+    display: none;
+  }
+}

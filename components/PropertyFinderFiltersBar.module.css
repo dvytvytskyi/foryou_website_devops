@@ -1,0 +1,718 @@
+.filters {
+  background: #ffffff;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: auto;
+}
+
+.filters.withMap {
+  padding: 16px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 48, 119, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.filtersModal {
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.filtersRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filtersRow.withMap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.filtersRow.withMap .typeToggle {
+  grid-column: span 1;
+  min-width: 180px;
+}
+
+.filtersRow.withMap .searchWrapper {
+  grid-column: span 2;
+  min-width: 200px;
+}
+
+
+@media (max-width: 1400px) {
+  .filtersRow.withMap {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.filtersRowModal {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.typeToggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.typeButton {
+  padding: 10px 20px;
+  border: none;
+  background: #ffffff;
+  color: #003077;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(0, 48, 119, 0.2);
+  white-space: nowrap;
+}
+
+.typeButton:last-child {
+  border-right: none;
+}
+
+.typeButton:hover {
+  background: rgba(0, 48, 119, 0.05);
+}
+
+.typeButton.active {
+  background: #003077;
+  color: #ffffff;
+}
+
+.searchWrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #003077;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #003077;
+}
+
+.searchInput::placeholder {
+  color: rgba(0, 48, 119, 0.65);
+  opacity: 1;
+  font-weight: 400;
+}
+
+.dropdownWrapper {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+
+.dropdownWrapper:has(.dropdownMenu) {
+  z-index: 1100;
+  position: relative;
+}
+
+.dropdownWrapper[data-dropdown-open="true"] {
+  z-index: 1100;
+  position: relative;
+}
+
+
+.locationDropdown {
+  min-width: 180px;
+}
+
+.locationDropdown .dropdownButton {
+  min-width: 180px;
+}
+
+.locationDropdown .dropdownMenu {
+  min-width: 320px;
+  max-width: 450px;
+}
+
+
+.bedroomsDropdown {
+  min-width: 140px;
+}
+
+.bedroomsDropdown .dropdownButton {
+  min-width: 140px;
+}
+
+.bedroomsDropdown .dropdownMenu {
+  min-width: 140px;
+  max-width: 180px;
+}
+
+
+.sizeDropdown {
+  min-width: 140px;
+}
+
+.sizeDropdown .dropdownButton {
+  min-width: 140px;
+}
+
+.sizeDropdown .dropdownMenu {
+  min-width: 280px;
+  max-width: 320px;
+  left: auto;
+  right: 0;
+}
+
+
+.priceDropdown {
+  min-width: 140px;
+}
+
+.priceDropdown .dropdownButton {
+  min-width: 140px;
+}
+
+.priceDropdown .dropdownMenu {
+  min-width: 280px;
+  max-width: 320px;
+  left: auto;
+  right: 0;
+}
+
+
+.sortDropdown {
+  min-width: 140px;
+}
+
+.sortDropdown .dropdownButton {
+  min-width: 140px;
+}
+
+.sortDropdown .dropdownMenu {
+  min-width: 180px;
+  max-width: 220px;
+}
+
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  width: 100%;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #003077;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdownButton:hover {
+  border-color: #003077;
+  background: rgba(0, 48, 119, 0.02);
+}
+
+.dropdownButton span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dropdownButton svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.dropdownButton svg.rotated {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px;
+}
+
+
+.withMap .dropdownMenu {
+  left: auto;
+  right: 0;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.withMap .locationDropdown .dropdownMenu {
+  min-width: 250px;
+  max-width: 300px;
+}
+
+
+.dropdownMenuDown {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
+
+.dropdownMenuUp {
+  top: auto;
+  bottom: calc(100% + 8px);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdownMenuModal {
+  z-index: 2100 !important;
+  
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  position: absolute !important;
+}
+
+
+
+.stickySearch {
+  position: sticky;
+  top: -8px;
+  background: #ffffff;
+  padding: 8px 4px;
+  margin: -8px -8px 8px -8px;
+  border-bottom: 1px solid rgba(0, 48, 119, 0.08);
+  z-index: 10;
+}
+
+.dropdownSearchInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.2s ease;
+  background: #f8faff;
+}
+
+.dropdownSearchInput:focus {
+  border-color: #003077;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 48, 119, 0.05);
+}
+
+.dropdownItem {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  color: #003077;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.dropdownItem:hover {
+  background: rgba(0, 48, 119, 0.05);
+}
+
+.dropdownItem.active {
+  background: rgba(0, 48, 119, 0.1);
+  font-weight: 500;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.checkboxItem:hover {
+  background: rgba(0, 48, 119, 0.05);
+}
+
+.checkboxItem input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #003077;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkboxItem span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #003077;
+  flex: 1;
+  min-width: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.rangeInputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  min-width: 250px;
+}
+
+.rangeInput {
+  width: 100px;
+  min-width: 80px;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 48, 119, 0.2);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #003077;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.unitInLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #003077;
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
+.rangeInput:focus {
+  border-color: #003077;
+}
+
+.rangeInput::placeholder {
+  color: rgba(0, 48, 119, 0.5);
+}
+
+.rangeSeparator {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #003077;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.rangeUnit {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #003077;
+  opacity: 0.7;
+  flex-shrink: 0;
+  min-width: 40px;
+}
+
+@media (max-width: 1400px) {
+  .locationDropdown {
+    min-width: 160px;
+  }
+
+  .locationDropdown .dropdownButton {
+    min-width: 160px;
+  }
+
+  .locationDropdown .dropdownMenu {
+    min-width: 300px;
+    max-width: 420px;
+  }
+
+  .bedroomsDropdown {
+    min-width: 130px;
+  }
+
+  .bedroomsDropdown .dropdownButton {
+    min-width: 130px;
+  }
+
+  .sizeDropdown,
+  .priceDropdown,
+  .sortDropdown {
+    min-width: 130px;
+  }
+
+  .sizeDropdown .dropdownButton,
+  .priceDropdown .dropdownButton,
+  .sortDropdown .dropdownButton {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filtersRow {
+    gap: 10px;
+  }
+
+  .typeButton {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .searchWrapper {
+    min-width: 180px;
+  }
+
+  .locationDropdown {
+    min-width: 150px;
+  }
+
+  .locationDropdown .dropdownButton {
+    min-width: 150px;
+  }
+
+  .locationDropdown .dropdownMenu {
+    min-width: 280px;
+    max-width: 400px;
+  }
+
+  .bedroomsDropdown {
+    min-width: 120px;
+  }
+
+  .bedroomsDropdown .dropdownButton {
+    min-width: 120px;
+  }
+
+  .sizeDropdown,
+  .priceDropdown,
+  .sortDropdown {
+    min-width: 120px;
+  }
+
+  .sizeDropdown .dropdownButton,
+  .priceDropdown .dropdownButton,
+  .sortDropdown .dropdownButton {
+    min-width: 120px;
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+}
+
+.filtersRowModal .typeToggle {
+  width: 100%;
+}
+
+.filtersRowModal .typeButton {
+  flex: 1;
+}
+
+.filtersRowModal .searchWrapper {
+  width: 100%;
+  min-width: 100%;
+}
+
+.filtersRowModal .dropdownWrapper {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+
+
+.filtersRowModal .dropdownWrapper[data-dropdown-open="true"] {
+  z-index: 2100;
+  position: relative;
+}
+
+
+.filtersRowModal .dropdownWrapper:has(.dropdownMenu) {
+  z-index: 2100;
+  position: relative;
+}
+
+.filtersRowModal .dropdownButton {
+  width: 100%;
+  min-width: 100%;
+}
+
+.filtersRowModal .dropdownMenu {
+  right: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  position: absolute !important;
+  box-sizing: border-box;
+}
+
+.filtersRowModal .rangeInputs {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.filtersRowModal .rangeInput {
+  flex: 1;
+  min-width: 100px;
+  max-width: none;
+}
+
+.filtersRowModal .checkboxItem {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.filtersRowModal .checkboxItem span {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+@media (min-width: 901px) {
+
+  
+  .filters {
+    position: relative;
+    z-index: auto;
+  }
+
+  
+  .filtersRow {
+    position: relative;
+    z-index: auto;
+  }
+
+  
+  .dropdownMenu {
+    z-index: 1100 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .filtersRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .typeToggle {
+    width: 100%;
+  }
+
+  .typeButton {
+    flex: 1;
+  }
+
+  .searchWrapper {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .dropdownWrapper {
+    width: 100%;
+  }
+
+  .searchInput,
+  .rangeInput,
+  .dropdownButton,
+  .dropdownItem,
+  .typeButton,
+  .checkboxItem span,
+  .rangeSeparator,
+  .rangeUnit,
+  .sortDropdown .dropdownButton,
+  .sizeDropdown .dropdownButton,
+  .priceDropdown .dropdownButton,
+  .locationDropdown .dropdownButton,
+  .bedroomsDropdown .dropdownButton,
+  .dropdownSearchInput {
+    font-size: 16px;
+  }
+}
+.searchBox {
+  position: sticky;
+  top: -8px;
+  background: #ffffff;
+  padding: 8px 4px;
+  margin: -8px -8px 8px -8px;
+  border-bottom: 1px solid rgba(0, 48, 119, 0.08);
+  z-index: 10;
+}
+
+.dropdownSearch {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 48, 119, 0.1);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.2s ease;
+  background: #f8faff;
+}
+
+.dropdownSearch:focus {
+  border-color: #003077;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 48, 119, 0.05);
+}
+
+.dropdownList {
+  max-height: 240px;
+  overflow-y: auto;
+  margin-top: 4px;
+}
+
+.noResults {
+  padding: 12px;
+  text-align: center;
+  color: rgba(0, 48, 119, 0.5);
+  font-size: 13px;
+}
